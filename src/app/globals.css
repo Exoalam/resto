@@ -31,3 +31,63 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Tabs */
+.tab {
+  @apply px-4 py-2 cursor-pointer;
+}
+
+.tab-active {
+  @apply text-primary border-b-2 border-primary;
+}
+
+/* Tab Content */
+.tab-pane {
+  @apply hidden;
+}
+
+.tab-pane-active {
+  @apply block;
+}
+
+/* Animations */
+.wow {
+  visibility: hidden;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
