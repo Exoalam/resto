@@ -2,7 +2,9 @@ import React from 'react'
 
 const Product = () => {
   return (
-    <div>Product</div>
+    <div data-theme='light' className='min-h-screen'>
+
+    </div>
   )
 }
 
