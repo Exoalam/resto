@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 
@@ -8,7 +7,7 @@ const News = () => {
     <div data-theme='light'>
       <div className='grid grid-cols-3 gap-y-10 w-[70%] m-auto pt-10 pb-10'>
         <div className="card w-96 bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%]">
-          <figure><Image src="Assets/images/Homepage Images/news (1).png" alt="Shoes" /></figure>
+          <figure><img src="Assets/images/Homepage Images/news (1).png" alt="Shoes" /></figure>
           <div className="card-body">
             <div className='flex flex-row'><FontAwesomeIcon icon={faClock} className='h-5 mr-2'></FontAwesomeIcon>
               <b>September 05, 2024</b>
@@ -17,7 +16,7 @@ const News = () => {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%]">
-          <figure><Image src="Assets/images/Homepage Images/news (2).png" alt="Shoes" /></figure>
+          <figure><img src="Assets/images/Homepage Images/news (2).png" alt="Shoes" /></figure>
           <div className="card-body">
             <div className='flex flex-row'><FontAwesomeIcon icon={faClock} className='h-5 mr-2'></FontAwesomeIcon>
               <b>September 04, 2024</b>
@@ -27,7 +26,7 @@ const News = () => {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%]">
-          <figure><Image src="Assets/images/Homepage Images/news (3).png" alt="Shoes" /></figure>
+          <figure><img src="Assets/images/Homepage Images/news (3).png" alt="Shoes" /></figure>
           <div className="card-body">
             <div className='flex flex-row'><FontAwesomeIcon icon={faClock} className='h-5 mr-2'></FontAwesomeIcon>
               <b>September 03, 2024</b>
@@ -37,7 +36,7 @@ const News = () => {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%]">
-          <figure><Image src="Assets/images/Homepage Images/news (4).png" alt="Shoes" /></figure>
+          <figure><img src="Assets/images/Homepage Images/news (4).png" alt="Shoes" /></figure>
           <div className="card-body">
             <div className='flex flex-row'><FontAwesomeIcon icon={faClock} className='h-5 mr-2'></FontAwesomeIcon>
               <b>September 02, 2024</b>
@@ -47,7 +46,7 @@ const News = () => {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%]">
-          <figure><Image src="Assets/images/Homepage Images/news (5).png" alt="Shoes" /></figure>
+          <figure><img src="Assets/images/Homepage Images/news (5).png" alt="Shoes" /></figure>
           <div className="card-body">
             <div className='flex flex-row'><FontAwesomeIcon icon={faClock} className='h-5 mr-2'></FontAwesomeIcon>
               <b>September 01, 2024</b>
@@ -57,7 +56,7 @@ const News = () => {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%]">
-          <figure><Image src="Assets/images/Homepage Images/news (6).png" alt="Shoes" /></figure>
+          <figure><img src="Assets/images/Homepage Images/news (6).png" alt="Shoes" /></figure>
           <div className="card-body">
             <div className='flex flex-row'><FontAwesomeIcon icon={faClock} className='h-5 mr-2'></FontAwesomeIcon>
               <b>August 31, 2024</b>
