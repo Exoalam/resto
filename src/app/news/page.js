@@ -24,7 +24,7 @@ const News = () => {
       {isMobile ? (
         // Mobile view
         <div className="grid grid-cols-1 gap-y-10 w-[80%] pt-10 pb-10 m-auto">
-          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full mx-4">
+          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full">
             <figure>
               <img src="Assets/images/Homepage Images/news (1).png" alt="Shoes" />
             </figure>
@@ -36,7 +36,7 @@ const News = () => {
               <p>VD Company and Kwangwoon University establish an industry-academia cooperation platform to foster the robot industry.</p>
             </div>
           </div>
-          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full mx-4">
+          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full">
             <figure>
               <img src="Assets/images/Homepage Images/news (2).png" alt="Shoes" />
             </figure>
@@ -48,7 +48,7 @@ const News = () => {
               <p>VD Company selected as Advanced Restaurant Industry Automation Solution Company by the Korean Food Promotion Agency's Overseas Korean Restaurant Council Workshop.</p>
             </div>
           </div>
-          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full mx-4">
+          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full">
             <figure>
               <img src="Assets/images/Homepage Images/news (3).png" alt="Shoes" />
             </figure>
@@ -60,7 +60,7 @@ const News = () => {
               <p>VD Company holds the largest-ever promotion Robot Festival to celebrate reaching 10,000 VD members.</p>
             </div>
           </div>
-          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full mx-4">
+          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full">
             <figure>
               <img src="Assets/images/Homepage Images/news (4).png" alt="Shoes" />
             </figure>
@@ -72,7 +72,7 @@ const News = () => {
               <p>Announcement of share certificate submission due to stock split.</p>
             </div>
           </div>
-          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full mx-4">
+          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full">
             <figure>
               <img src="Assets/images/Homepage Images/news (5).png" alt="Shoes" />
             </figure>
@@ -84,7 +84,7 @@ const News = () => {
               <p>VD Company ranked first among Best Medium-sized and Small Businesses to Work for in the First Half of 2024.</p>
             </div>
           </div>
-          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full mx-4">
+          <div className="card bg-base-100 shadow-md hover:shadow-2xl hover:scale-[101%] w-full">
             <figure>
               <img src="Assets/images/Homepage Images/news (6).png" alt="Shoes" />
             </figure>
