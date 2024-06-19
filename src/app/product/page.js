@@ -1,5 +1,5 @@
-'use client'
-import React, {useState} from 'react'
+'use client';
+import React, { useState } from 'react';
 
 const Product = () => {
   const [selectedButton, setSelectedButton] = useState(0);
@@ -25,7 +25,6 @@ const Product = () => {
       title: 'KettyBot',
       description: 'A smart guidance robot with a large display on the front that is minimal in size and has no problems even in narrow passages.',
     },
-    
   ];
 
   const handleButtonClick = (index) => {
@@ -33,37 +32,64 @@ const Product = () => {
   };
 
   return (
-    <div data-theme='light' className='min-h-screen'>
-          <div className="grid grid-cols-2 gap-4 m-auto w-[70%] pt-40">
-      <div className="flex flex-col space-y-4 relative">
-        {cardData.map((card, index) => (
-          <button
-            key={index}
-            className={`ml-auto w-1/2 btn btn-outline ${
-              selectedButton === index ? 'btn-primary' : 'btn-gray-400'
-            }`}
-            onClick={() => handleButtonClick(index)}
-          >
-            {card.title}
-          </button>
-        ))}
-        <div
-          className="absolute left-full top-0 w-1 bg-primary transition-all duration-300 ease-in-out"
-          style={{ transform: `translateY(${selectedButton * 100}%)` }}
-        ></div>
-      </div>
-      <div className="card lg:card-side bg-base-100 shadow-xl">
-        <figure>
-          <img src={cardData[selectedButton].image} alt="Album" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{cardData[selectedButton].title}</h2>
-          <p>{cardData[selectedButton].description}</p>
+    <div data-theme="light" className="min-h-screen">
+      {/* Desktop view */}
+      <div className="hidden md:grid grid-cols-2 gap-4 w-full pt-20 -mx-[20%]">
+        <div className="flex flex-col space-y-4 relative">
+          {cardData.map((card, index) => (
+            <button
+              key={index}
+              className={`ml-auto w-[30%] btn btn-outline ${
+                selectedButton === index ? 'bg-black text-white' : 'btn-gray-400'
+              }`}
+              onClick={() => handleButtonClick(index)}
+            >
+              {card.title}
+            </button>
+          ))}
+          <div
+            className="absolute left-full top-0 w-1 bg-primary transition-all duration-300 ease-in-out"
+            style={{ transform: `translateY(${selectedButton * 100}%)` }}
+          ></div>
+        </div>
+        <div className="card lg:card-side bg-base-100 shadow-xl w-full">
+          <figure>
+            <img src={cardData[selectedButton].image} alt="Album" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">{cardData[selectedButton].title}</h2>
+            <p>{cardData[selectedButton].description}</p>
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Mobile view */}
+      <div className="md:hidden flex flex-col gap-4 m-auto w-[90%] pt-20">
+        <div className="flex flex-row space-x-4 overflow-x-auto m-auto">
+          {cardData.map((card, index) => (
+            <button
+              key={index}
+              className={`btn btn-outline ${
+                selectedButton === index ? 'bg-black text-white' : 'btn-gray-400'
+              }`}
+              onClick={() => handleButtonClick(index)}
+            >
+              {card.title}
+            </button>
+          ))}
+        </div>
+        <div className="card bg-base-100 shadow-xl">
+          <figure>
+            <img src={cardData[selectedButton].image} alt="Album" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">{cardData[selectedButton].title}</h2>
+            <p>{cardData[selectedButton].description}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Product
+export default Product;
