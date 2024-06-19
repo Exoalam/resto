@@ -31,14 +31,14 @@ const Navigation = () => {
           </label>
           {isOpen && (
             <div className="fixed inset-0 bg-base-100 z-50">
-              <div className="navbar-end absolute top-0 right-0 p-4">
+              <div className="navbar-end absolute top-0 right-0 p-4 w-full pl-[85%]">
                 <button className="btn btn-ghost" onClick={toggleMenu}>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
               </div>
-              <ul className="menu menu-compact flex flex-col items-center justify-center h-full text-xl">
+              <ul className="menu menu-compact flex flex-col items-center justify-center h-full text-3xl gap-y-5">
                 <li>
                   <Link href="/" onClick={toggleMenu}>
                     Home
