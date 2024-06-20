@@ -65,7 +65,7 @@ const Product = () => {
 
       {/* Mobile view */}
       <div className="md:hidden flex flex-col gap-4 m-auto w-[90%] pt-20">
-        <div className="flex flex-row space-x-4 overflow-x-auto m-auto">
+        <div className="flex flex-row space-x-4 m-auto">
           {cardData.map((card, index) => (
             <button
               key={index}
