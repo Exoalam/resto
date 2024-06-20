@@ -103,7 +103,7 @@ const Navigation = () => {
               <span className="mr-2">Email</span>
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
-            <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="btn bg-white text-black hover:bg-gray-200 flex items-center">
+            <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="btn bg-white text-black hover:bg-gray-200 flex flex-row items-center w-[150px]">
               <span className="mr-2">Facebook</span>
               <FontAwesomeIcon icon={faBook} />
             </a>
