@@ -32,7 +32,7 @@ const Product = () => {
   };
 
   return (
-    <div data-theme="light" className="min-h-screen">
+    <div data-theme="light" className="min-h-screen min-w-screen bg-white">
       {/* Desktop view */}
       <div className="hidden md:grid grid-cols-2 gap-4 w-full pt-20 -mx-[20%]">
         <div className="flex flex-col space-y-4 relative">
@@ -65,11 +65,11 @@ const Product = () => {
 
       {/* Mobile view */}
       <div className="md:hidden flex flex-col gap-4 m-auto w-[90%] pt-20">
-        <div className="flex flex-row space-x-4 m-auto">
+        <div className="grid grid-cols-2 gap-5 m-auto">
           {cardData.map((card, index) => (
             <button
               key={index}
-              className={`btn btn-outline ${
+              className={`btn btn-outline w-[90%] ${
                 selectedButton === index ? 'bg-black text-white' : 'btn-gray-400'
               }`}
               onClick={() => handleButtonClick(index)}
