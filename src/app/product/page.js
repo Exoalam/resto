@@ -25,6 +25,11 @@ const Product = () => {
       title: 'KettyBot',
       description: 'A smart guidance robot with a large display on the front that is minimal in size and has no problems even in narrow passages.',
     },
+    {
+      image: 'Assets/images/Homepage Images/robot 5.jpg',
+      title: 'Flippy',
+      description: 'Flippy is a ground-breaking, smart commercial kitchen robot that fries items from french fries to chicken nuggets, and works alongside humans to enhance quality and consistency, while creating substantial, measurable cost savings for restaurants.',
+    }
   ];
 
   const handleButtonClick = (index) => {
