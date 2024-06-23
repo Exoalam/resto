@@ -6,7 +6,7 @@ import { faBook, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isFloatingOpen, setIsFloatingOpen] = useState(false);
+  const [isFloatingOpen, setIsFloatingOpen] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -88,7 +88,7 @@ const Navigation = () => {
           </ul>
         </div>
       </div>
-      <div className="fixed bottom-6 right-6 lg:hidden z-50">
+      <div className="fixed bottom-6 right-6 z-50">
         <button
           className="btn btn-circle bg-white text-black hover:bg-gray-200"
           onClick={toggleFloating}
