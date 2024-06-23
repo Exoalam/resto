@@ -10,31 +10,31 @@ const Product = () => {
       image: 'Assets/images/Homepage Images/robot1.png',
       title: 'PuduBot',
       description: 'Practical and convenient standard serving robot with the largest load capacity.',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_1',
+      videoUrl: 'Assets/pudu.mp4',
     },
     {
       image: 'Assets/images/Homepage Images/robot2.png',
       title: 'BellaBot',
       description: 'Premium serving robot capable of exchanging emotions through voice, facial expressions, etc.',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_2',
+      videoUrl: 'Assets/bella.mp4',
     },
     {
       image: 'Assets/images/Homepage Images/robot3.png',
       title: 'HolaBot',
       description: 'A high-efficiency, high-capacity unloading robot that supports a call function and increases table turnover.',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_3',
+      videoUrl: 'Assets/hola.mkv',
     },
     {
       image: 'Assets/images/Homepage Images/robot4.png',
       title: 'KettyBot',
       description: 'A smart guidance robot with a large display on the front that is minimal in size and has no problems even in narrow passages.',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_4',
+      videoUrl: 'Assets/ketty.mp4',
     },
     {
       image: 'Assets/images/Homepage Images/robot 5.jpg',
       title: 'Flippy',
       description: 'Flippy is a ground-breaking, smart commercial kitchen robot that fries items from french fries to chicken nuggets, and works alongside humans to enhance quality and consistency, while creating substantial, measurable cost savings for restaurants.',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_5',
+      videoUrl: 'Assets/Flippy.mp4',
     }
   ];
 
@@ -58,9 +58,8 @@ const Product = () => {
           {cardData.map((card, index) => (
             <button
               key={index}
-              className={`ml-auto w-[30%] btn btn-outline ${
-                selectedButton === index ? 'bg-black text-white' : 'btn-gray-400'
-              }`}
+              className={`ml-auto w-[30%] btn btn-outline ${selectedButton === index ? 'bg-black text-white' : 'btn-gray-400'
+                }`}
               onClick={() => handleButtonClick(index)}
             >
               {card.title}
@@ -91,9 +90,8 @@ const Product = () => {
           {cardData.map((card, index) => (
             <button
               key={index}
-              className={`btn btn-outline w-[90%] ${
-                selectedButton === index ? 'bg-black text-white' : 'btn-gray-400'
-              }`}
+              className={`btn btn-outline w-[90%] ${selectedButton === index ? 'bg-black text-white' : 'btn-gray-400'
+                }`}
               onClick={() => handleButtonClick(index)}
             >
               {card.title}
@@ -119,20 +117,20 @@ const Product = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-4 rounded-lg w-11/12 md:w-3/4 lg:w-1/2">
             <div className='flex flex-row'>
-            <h2 className="text-2xl font-bold mb-4">{cardData[selectedButton].title}</h2>
-            <button className="btn btn-outline bg-black text-white hover:bg-white hover:text-black hover:border-black ml-auto" onClick={closeModal}> X </button>
+              <h2 className="text-2xl font-bold mb-4">{cardData[selectedButton].title}</h2>
+              <button className="btn btn-outline bg-black text-white hover:bg-white hover:text-black hover:border-black ml-auto mb-5" onClick={closeModal}> X </button>
             </div>
-            <div className="relative" style={{paddingBottom: '56.25%'}}>
-              <iframe 
+            <div className="relative" style={{ paddingBottom: '56.25%' }}>
+              <video
                 className="absolute top-0 left-0 w-full h-full"
-                src={cardData[selectedButton].videoUrl} 
+                src={cardData[selectedButton].videoUrl}
                 title={`${cardData[selectedButton].title} video`}
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              ></iframe>
+                controls
+                autoPlay
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
-
           </div>
         </div>
       )}
