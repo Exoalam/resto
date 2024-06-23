@@ -8,6 +8,12 @@ const Innovation = () => {
           <div className="max-w-screen">
             <h1 className="text-6xl sm:text-8xl font-bold mx-auto">ATR Lab</h1>
             <p className="py-8 w-1/2 mx-auto">The intersection of trends in the restaurant industry and artifical intelligence is revolutionizing how we dine with AI-driven innovations enhancing everything from kitchen operations to personalized customer experiences.</p>
+            <a
+              href="https://www.atr.cs.kent.edu"
+              className="btn btn-outline bg-black text-white hover:bg-white hover:text-black hover:border-black"
+            >
+              Learn More
+            </a>
           </div>
         </div>
       </div>
