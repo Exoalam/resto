@@ -5,7 +5,7 @@ const HomePage = () => {
     <div data-theme="light" className="relative h-full">
       {/* Mobile video */}
       <video
-        className="absolute top-0 left-0 w-full h-screen object-cover md:hidden"
+        className="absolute top-0 left-0 w-full h-screen object-cover md:hidden filter grayscale"
         autoPlay
         loop
         muted
@@ -16,7 +16,7 @@ const HomePage = () => {
 
       {/* Desktop video */}
       <video
-        className="hidden md:block w-full h-full object-contain"
+        className="hidden md:block w-full h-full object-contain  filter grayscale"
         autoPlay
         loop
         muted
