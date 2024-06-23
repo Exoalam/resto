@@ -70,7 +70,7 @@ const Product = () => {
             style={{ transform: `translateY(${selectedButton * 100}%)` }}
           ></div>
         </div>
-        <div className="card lg:card-side bg-base-100 shadow-xl w-full">
+        <div className="card lg:card-side bg-base-100 shadow-xl w-full h-[100%]">
           <figure>
             <img src={cardData[selectedButton].image} alt="Album" />
           </figure>
