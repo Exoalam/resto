@@ -6,7 +6,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navigation />
-        {children}
+        <div className='bg-white min-h-screen'>
+          {children}
+        </div>
       </body>
     </html>
   );
