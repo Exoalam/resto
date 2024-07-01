@@ -90,7 +90,7 @@ const Navigation = () => {
       </div>
       <div className="fixed bottom-6 right-6 z-50">
         <button
-          className="btn btn-circle bg-white text-black hover:bg-gray-200"
+          className="btn btn-circle bg-white text-black hover:bg-gray-200 hover:shadow-xl"
           onClick={toggleFloating}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,11 +99,11 @@ const Navigation = () => {
         </button>
         {isFloatingOpen && (
           <div className="absolute bottom-16 right-0 flex flex-col space-y-2">
-            <a href="mailto:your@email.com" className="btn bg-white text-black hover:bg-gray-200 flex items-center">
+            <a href="mailto:your@email.com" className="btn bg-white text-black hover:bg-gray-200 hover:shadow-xl flex items-center">
               <span className="mr-2">Email</span>
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
-            <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="btn bg-white text-black hover:bg-gray-200 flex flex-row items-center w-[150px]">
+            <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="btn bg-white text-black hover:bg-gray-200 hover:shadow-xl flex flex-row items-center w-[150px]">
               <span className="mr-2">Facebook</span>
               <FontAwesomeIcon icon={faBook} />
             </a>
