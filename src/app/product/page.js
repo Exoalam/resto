@@ -70,15 +70,24 @@ const Product = () => {
             style={{ transform: `translateY(${selectedButton * 100}%)` }}
           ></div>
         </div>
-        <div className="card lg:card-side bg-base-100 shadow-xl w-full h-[100%]">
-          <figure>
-            <img src={cardData[selectedButton].image} alt="Album" />
+        <div className="card lg:card-side sm:card-side bg-base-100 shadow-xl w-full h-[600px] overflow-hidden">
+          <figure className="w-1/2 h-full">
+            <img
+              src={cardData[selectedButton].image}
+              alt="Album"
+              className="w-full h-full object-fill"
+            />
           </figure>
-          <div className="card-body">
+          <div className="card-body w-1/2 h-full overflow-y-auto">
             <h2 className="card-title">{cardData[selectedButton].title}</h2>
             <p>{cardData[selectedButton].description}</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-outline bg-black text-white hover:bg-white hover:text-black hover:border-black" onClick={openModal}>Learn More</button>
+            <div className="card-actions justify-end mt-auto">
+              <button
+                className="btn btn-outline bg-black text-white hover:bg-white hover:text-black hover:border-black"
+                onClick={openModal}
+              >
+                Learn More
+              </button>
             </div>
           </div>
         </div>
